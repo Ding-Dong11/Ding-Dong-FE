@@ -1,0 +1,38 @@
+.email-row,
+.code-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.code-row {
+  position: relative;
+}
+
+.code-input {
+  padding-right: 76px;
+}
+
+.secondary-button {
+  flex: 0 0 79px;
+}
+
+.secondary-button-sent {
+  background-color: #9ca3af;
+}
+
+.timer {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+}
+
+.timer-active {
+  color: #d97706;
+}
+
+.timer-expired {
+  color: #dc2626;
+}
