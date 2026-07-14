@@ -1,0 +1,50 @@
+.login-back-button {
+  position: absolute;
+  left: 27px;
+  top: 58px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.login-back-button span {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #111827;
+  border-bottom: 2px solid #111827;
+  transform: rotate(45deg);
+}
+
+.login-form {
+  padding-top: 0;
+}
+
+.login-label {
+  padding: 0;
+  font-weight: 600;
+}
+
+.login-input {
+  margin-top: 8px;
+  border-color: transparent;
+  background-color: #f8f9fb;
+}
+
+.login-password-field {
+  margin-top: 19px;
+}
+
+.login-actions {
+  padding-bottom: 16px;
+}
+
+.login-signup {
+  gap: 4px;
+  font-size: 0.8rem;
+}
