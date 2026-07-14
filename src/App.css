@@ -5,13 +5,22 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #f1f3f5; /* 모바일 기기 바깥 배경은 살짝 부드러운 회색 */
 }
 
 .app-container {
   width: 393px;
   height: 852px;
-  overflow: hidden; 
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
+  
+  /* 🎯 스크롤 먹통 문제를 완벽히 해결하는 핵심 */
+  overflow-y: auto; /* 고정 크기 852px을 넘어서면 내부에서 스크롤이 굴러갑니다 */
+}
+
+/* 스크롤바 숨기기 (피그마 목업 화면처럼 깔끔하게 보이도록 설정) */
+.app-container::-webkit-scrollbar {
+  display: none;
 }
