@@ -1,0 +1,49 @@
+.sale {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff; /* 완전 하양 배경 */
+  overflow-y: auto;          /* 내용이 넘칠 때 스크롤 활성화 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0rem 8rem; /* 스크롤 끝에 마지막 상품이 완전히 다 보이도록 하단 여백을 충분히 확보 (8rem) */
+  box-sizing: border-box;
+  gap: 1.5rem;
+  min-height: 100vh;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: var(--font-pretendard);
+}
+
+.h3 {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--typo-heading-h2);
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--color-gray-1000);
+}
+
+.product-grid {
+  width: 100%;
+  max-width: 25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 바둑판 정렬 */
+  gap: 1.5rem 0.75rem; 
+  padding: 0 var(--left-20); 
+  box-sizing: border-box;
+}
+
+.spacer-element-icon {
+  position: fixed;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(6.5rem); /* 모바일 디바이스 우측 하단 고정 */
+  box-shadow: var(--shadow-100);
+  border-radius: var(--br-50);
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  z-index: 10;
+}

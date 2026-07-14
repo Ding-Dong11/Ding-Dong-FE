@@ -2,11 +2,60 @@ html,
 body,
 #root {
   margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 100%;
-  font-family: system-ui, sans-serif;
-  background: #f7fafc;
+  font-family: "Pretendard", -apple-system, sans-serif;
+  background-color: #ffffff; /* 완전 하양색 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  color: #111827;
+:root {
+  /* 디자인 토큰 - 색상 */
+  --color-crimson: #ea3333;           /* 할인율 빨간색 */
+  --color-gray-1000: #111827;         /* 타이틀 및 메인 텍스트 검정 */
+  --color-gray-800: #343a40;          /* 일반 텍스트 어두운 회색 */
+  --color-gray-500: #868e96;          /* 브랜드명 회색 */
+  --color-gray-50: #f8f9fa;           /* 이미지 기본 배경 연한 회색 */
+  --color-gray-0: #ffffff;            /* 완전 하얀색 */
+  --color-opacity-black-30: rgba(0, 0, 0, 0.35); /* 딤처리용 검은색 반투명 */
+
+  /* 디자인 토큰 - 타이포그래피 */
+  --typo-heading-h2: 1.25rem;         /* 20px (타이틀) */
+  --typo-body-large: 1.125rem;        /* 18px (할인율/가격) */
+  --typo-body-medium: 1rem;           /* 16px (상품명) */
+  --typo-body-xsmaill: 0.75rem;       /* 12px (브랜드명/배지) */
+  --font-pretendard: "Pretendard", -apple-system, sans-serif;
+
+  /* 디자인 토큰 - 크기 및 간격 */
+  --height-169: 10.562rem;            /* 이미지 영역 고정 높이 */
+  --height-61: 3.813rem;              
+  --height-48: 3rem;                  /* 48px 플로팅 버튼 */
+  --height-26: 1.625rem;              /* 26px 배지 높이 */
+  --width-64: 4rem;                   
+  --width-83: 5.188rem;               
+  
+  --padding-4: 0.25rem;
+  --padding-8: 0.5rem;
+  --padding-10: 0.625rem;
+  --padding-12: 0.75rem;
+  --left-20: 1.25rem;                 /* 화면 좌우 여백 */
+
+  --gap-2: 0.25rem;
+  --gap-7: 0.438rem;
+  --gap-15: 0.938rem;                 
+
+  /* 라운드 및 그림자 */
+  --br-5: 5px;                        /* 카드 이미지 테두리 둥글기 */
+  --br-50: 50px;                      /* 완전 둥근 프레임 */
+  --shadow-100: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  --min-w-40: 2.5rem;
+  --min-w-38: 2.375rem;
+  --min-w-43: 2.688rem;
+}
+
+* {
+  box-sizing: border-box;
 }

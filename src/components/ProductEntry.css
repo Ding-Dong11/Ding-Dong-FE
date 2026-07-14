@@ -1,0 +1,133 @@
+.image-2-container,
+.media-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.media-block {
+  align-self: stretch;
+  gap: var(--gap-7);
+  text-align: left;
+  font-family: var(--font-pretendard);
+}
+
+/* 이미지 박스 (찌그러짐 완전 해결) */
+.image-2-container {
+  align-self: stretch;
+  height: var(--height-169);
+  min-height: 10.562rem;
+  border-radius: var(--br-5);
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+  isolation: isolate;
+  background-color: var(--color-gray-50);
+}
+
+.image-2-icon3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 검은색 딤처리(반투명) + 완전 둥근 프레임 배지 */
+.status-wrapper {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  height: var(--height-26);
+  border-radius: var(--br-50); 
+  background-color: var(--color-opacity-black-30); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.65rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.div11 {
+  font-size: var(--typo-body-xsmaill);
+  line-height: 150%;
+  font-weight: 600;
+  color: #ffffff !important; /* 글씨 흰색 고정 */
+}
+
+/* 품절 오버레이 */
+.soldout-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55); /* 이미지 딤 필터 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important; /* 글씨 흰색 고정 */
+  font-size: var(--typo-body-medium);
+  font-weight: 700;
+  z-index: 2;
+}
+
+/* 텍스트 컨텐츠 블록 */
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+  margin-top: 0.25rem;
+}
+
+.div12 {
+  font-size: var(--typo-body-xsmaill);
+  color: var(--color-gray-500);
+  line-height: 120%;
+}
+
+.div13 {
+  font-size: var(--typo-body-medium);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  line-height: 140%;
+}
+
+/* 가격 정보 그룹 */
+.price-main-parent {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.125rem;
+}
+
+.price-main {
+  font-size: var(--typo-body-large);
+  font-weight: 700;
+  color: var(--color-crimson) !important; /* 34% 빨간색 유지 */
+}
+
+.price-extra {
+  font-size: var(--typo-body-large);
+  font-weight: 700;
+  color: var(--color-gray-1000); /* 가격 검정색 */
+}
+
+/* 품절 상태일 때 전체 텍스트 톤 다운 (단, 오버레이 품절 텍스트는 제외) */
+.is-soldout .div12 {
+  color: #dee2e6 !important;
+}
+.is-soldout .div13 {
+  color: #adb5bd !important;
+}
+.is-soldout .price-main {
+  color: #e9ecef !important; /* 품절 시 빨간색 할인율도 회색 비활성화 */
+}
+.is-soldout .price-extra {
+  color: #adb5bd !important;
+}
