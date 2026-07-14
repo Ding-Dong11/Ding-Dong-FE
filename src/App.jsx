@@ -3,6 +3,7 @@ import KakaoMap from './pages/KakaoMap.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import PasswordPage from './pages/Password.jsx';
 import SignupPage from './pages/SignupPage.jsx';
+import Mypage from './pages/Mypage.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/password" element={<PasswordPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/map" element={<KakaoMap />} />
+        <Route path="/mypage" element={<Mypage />} />
       </Routes>
     </BrowserRouter>
   );
